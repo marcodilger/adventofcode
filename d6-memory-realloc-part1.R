@@ -7,6 +7,13 @@
 
 banks <- unname(unlist(read.delim("data/d6-memory-realloc.txt", header = FALSE, sep = "\t")))
 banksLength <- length(banks)
+
+library(hash)
+states <- hash()
+
+hash(a=temp)
+temp <- deparse(c("a","b"))
+
 states <- list(banks)
 
 
